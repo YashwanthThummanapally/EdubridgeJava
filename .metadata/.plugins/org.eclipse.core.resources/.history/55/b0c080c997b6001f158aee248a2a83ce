@@ -1,0 +1,22 @@
+/*
+ * @FunctionalInterface
+ * public interface Supplier<T>{
+ * 	T get();
+ * 	}
+ */
+package java8;
+
+import java.util.function.Supplier;
+
+public class Test11 {
+	public static void main(String[] args) {
+		Supplier<String> s1 = () -> {return "Java is interesting subject";};
+		System.out.println(s1.get());
+	}
+}
+
+class Animal {
+	private String animalName;
+	private int age;
+	private String animalType; // herbivores, carnivores, omnivores
+}

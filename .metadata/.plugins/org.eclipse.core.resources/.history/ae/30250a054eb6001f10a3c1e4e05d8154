@@ -1,0 +1,28 @@
+/*
+ * @FunctionalInterface
+ * public interface Function<T,R>{
+ * 		R apply(T x);
+ */
+package java8;
+
+import java.util.function.Function;
+
+public class Test10 {
+	public static void main(String[] args) {
+		// square of a number
+		Function<Integer, Integer> f1 = num -> num * num;
+		System.out.println(f1.apply(5));
+		
+		// find length of the string
+		Function<String, Integer> f2 = s -> s.length();
+		System.out.println(f2.apply("Yogi adityanath"));
+		
+		// check name starts with R
+		Function<String, Boolean> f3 = s -> s.startsWith("R");
+		System.out.println(f3.apply("Ranganath"));
+		
+		// find number of elements in an array
+		Function<Integer[], Integer> f4 = arr -> arr.length;
+		System.out.println(f4.apply({5,4,6,7,8,3,2,2}));
+	}
+}

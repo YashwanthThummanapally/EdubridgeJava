@@ -1,0 +1,15 @@
+package practice;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class PrintEvenSum {
+	public static void main(String[] args) {
+		List<Integer> list = Arrays.asList(66,33,77,44,55,99);
+		
+		// using for each loop
+		for(int item : list) {
+			
+		}
+	}
+}

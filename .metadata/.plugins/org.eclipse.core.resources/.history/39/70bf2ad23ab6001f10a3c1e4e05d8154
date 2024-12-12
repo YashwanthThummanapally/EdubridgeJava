@@ -1,0 +1,18 @@
+package java8;
+
+class Accept<T> {
+	private T variable;
+	
+	public Accept(T variable) {
+		super();
+		this.variable = variable;
+	}
+	
+	public T getVariable() {
+		return this.variable;
+	}
+}
+
+public class Test7 {
+
+}

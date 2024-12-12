@@ -1,0 +1,19 @@
+package myProject;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class StudentTest {
+	public static void main(String[] args) {
+		List<Student> students = Arrays.asList(
+				new Student(101, "Wills", "JFS"),
+				new Student(102, "Smith", "JFS"),
+				new Student(103, "Alice", "PFS"),
+				new Student(104, "Alex", "PFS"),
+				new Student(105, "Jones", "JFS")
+				);
+		
+		System.out.println("--------All student list---------");
+		students.forEach(System.out::println);
+	}
+}

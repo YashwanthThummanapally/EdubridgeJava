@@ -1,0 +1,20 @@
+package com.edubridge.maven_project1;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.BeforeAll;
+
+public class AuthServiceTest {
+	private AuthService auth;
+	
+	@BeforeAll // for all test case at once
+	public void setUp() {
+		auth = new AuthService();
+	}
+	
+	public void testAuthenticateWithValidData() {
+		boolean actual = auth.authenticate("admin", "admin123");
+		
+		assertTrue(actual);
+	}
+}

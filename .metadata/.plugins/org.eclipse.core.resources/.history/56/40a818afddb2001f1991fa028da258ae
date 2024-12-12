@@ -1,0 +1,24 @@
+
+class BahubaliThread extends Thread {
+	// to calculate sum of 1st 100 numbers
+	
+	int sum = 0;
+	@Override
+	public void run() {
+		for(int i=1; i<=100; i++) {
+			sum += i;
+		}
+	}
+}
+
+public class InterThreadCommunicationDemo {
+	public static void main(String[] args) {
+		BahubaliThread thread = new BahubaliThread();
+		thread.start();
+		
+		thread.wait();
+		
+		// main thread job : to print sum of 1st 100 numbers
+		System.out.println(thread.sum);
+	}
+}

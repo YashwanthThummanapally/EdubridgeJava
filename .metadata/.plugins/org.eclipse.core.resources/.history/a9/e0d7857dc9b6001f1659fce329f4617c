@@ -1,0 +1,7 @@
+package myProject;
+
+public class EmployeeTest {
+	public static void main(String[] args) {
+		new Employee(1, "", 23, "");
+	}
+}

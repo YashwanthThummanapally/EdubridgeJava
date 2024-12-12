@@ -1,0 +1,63 @@
+
+class RedLight implements Runnable {
+
+	@Override
+	public void run() {
+		System.out.println("Red light");
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}	
+}
+
+class YellowLight extends Thread {
+	@Override
+	public void run() {
+		System.out.println("Yellow light");
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}
+
+class GreenLight implements Runnable {
+
+	@Override
+	public void run() {
+		System.out.println("Green light");
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}
+
+public class TrafficLights {
+	public static void main(String[] args) {
+		RedLight redLight = new RedLight();
+		Thread thread1 = new Thread(redLight);
+		thread1.start();
+		try {
+			thread1.join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		YellowLight yellowLight = new YellowLight();
+		yellowLight.start();
+		try {
+			yellowLight.join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		GreenLight greenLight = new GreenLight();
+		Thread thread2 = new Thread(greenLight);
+		thread2.start();
+	}
+}

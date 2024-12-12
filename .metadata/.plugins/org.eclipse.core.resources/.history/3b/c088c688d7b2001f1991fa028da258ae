@@ -1,0 +1,48 @@
+
+class MultiplicationTable{
+	public void printTable(int num) {
+		for(int i=1; i<=10; i++) {
+			System.out.println(num+" * "+i+" = "+(num*i));			
+		}
+	}
+}
+
+class KohliThread extends Thread {
+	
+	private MultiplicationTable table;
+	
+	public KohliThread(MultiplicationTable table) {
+		this.table = table;
+	}
+
+	@Override
+	public void run() {
+		table.printTable(18);
+	}
+}
+
+class DhoniThread extends Thread {
+	
+	private MultiplicationTable table;
+	
+	public DhoniThread(MultiplicationTable table) {
+		this.table = table;
+	}
+	
+	@Override
+	public void run() {
+		table.printTable(19);
+	}
+}
+
+public class SynchronizationDemo {
+	public static void main(String[] args) {
+		MultiplicationTable table = new MultiplicationTable();
+		
+		KohliThread kohliThread = new KohliThread(table);
+		DhoniThread dhoniThread = new DhoniThread(table);
+		
+		kohliThread.start();
+		dhoniThread.start();
+	}
+}

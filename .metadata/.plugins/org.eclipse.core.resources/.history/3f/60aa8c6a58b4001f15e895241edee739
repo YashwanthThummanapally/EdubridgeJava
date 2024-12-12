@@ -1,0 +1,14 @@
+package collections;
+
+import java.util.HashMap;
+
+public class HashMapDemo {
+	public static void main(String[] args) {
+		HashMap<String, Integer> hm = new HashMap<String, Integer>();
+		hm.put("Java Full Stack", 400);
+		hm.put("Python Full Stack", 400);
+		hm.put("MEAN", 250);
+		hm.put("MERN", 250);
+		System.out.println(hm);
+	}
+}

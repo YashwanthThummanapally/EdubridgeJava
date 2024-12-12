@@ -1,0 +1,18 @@
+/*
+ * Bi directional
+ */
+package collections;
+
+import java.util.ArrayDeque;
+
+public class ArrayDequeueDemo {
+	public static void main(String[] args) {
+		ArrayDeque<Integer> d = new ArrayDeque<Integer>();
+		d.offerFirst(100);
+		d.offerFirst(200);
+		d.offerFirst(300);
+		d.offerLast(10);
+		
+		System.out.println(d);
+	}
+}

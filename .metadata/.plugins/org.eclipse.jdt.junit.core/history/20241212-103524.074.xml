@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CalciTest (3)" project="maven_project1" tests="2" started="2" failures="0" errors="2" ignored="0">
+  <testsuite name="com.edubridge.maven_project1.CalciTest" time="0.001" displayname="CalciTest" uniqueid="[engine:junit-jupiter]/[class:com.edubridge.maven_project1.CalciTest]">
+    <testcase name="testFindSquare" classname="com.edubridge.maven_project1.CalciTest" time="0.001" displayname="testFindSquare()" uniqueid="[engine:junit-jupiter]/[class:com.edubridge.maven_project1.CalciTest]/[method:testFindSquare()]">
+      <error>java.lang.NullPointerException: Cannot invoke "com.edubridge.maven_project1.Calci.findSquare(int)" because "this.calci" is null&#13;
+	at com.edubridge.maven_project1.CalciTest.testFindSquare(CalciTest.java:20)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testFindCube" classname="com.edubridge.maven_project1.CalciTest" time="0.0" displayname="testFindCube()" uniqueid="[engine:junit-jupiter]/[class:com.edubridge.maven_project1.CalciTest]/[method:testFindCube()]">
+      <error>java.lang.NullPointerException: Cannot invoke "com.edubridge.maven_project1.Calci.findCube(int)" because "this.calci" is null&#13;
+	at com.edubridge.maven_project1.CalciTest.testFindCube(CalciTest.java:28)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

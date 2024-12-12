@@ -1,0 +1,35 @@
+package com.edubridge.maven_project1;
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+public class CalciTest {
+	
+	private Calci calci = null;
+	
+	public void setUp() {
+		calci = new Calci();
+	}
+	
+	public void tearUp() {
+		calci = null;
+	}
+
+	@Test
+	public void testFindSquare() {
+		Calci calci = new Calci();
+		int actual = calci.findSquare(10);
+		int expected = 100;
+		
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void testFindCube() {
+		Calci calci = new Calci();
+		int actual = calci.findCube(10);
+		int expected = 1000;
+		
+		assertEquals(expected, actual);
+	}
+}

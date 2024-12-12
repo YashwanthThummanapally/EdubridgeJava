@@ -1,0 +1,49 @@
+
+class Programming {
+	public void coding() {
+		System.out.println("coding is fun...");
+	}
+}
+
+
+// creating user defined thread using Thread class
+class JavaThread extends Thread //, Programming 
+{
+	@Override
+	public void run() {
+		// define thread job
+		for(int i=1; i<=10; i++) {
+			System.out.println("Java "+i);
+		}
+	}
+}
+
+// creating user defined thread using Runnable interface
+class PythonThread implements Runnable {
+
+	@Override
+	public void run() {
+		for(int i=1; i<=10; i++) {
+			System.out.println("Python "+i);
+		}
+	} // The type PythonThread must implement the inherited abstract method Runnable.run()
+	
+}
+
+public class ThreadDemo {
+	public static void main(String[] args) {
+		JavaThread javaThread = new JavaThread();
+		javaThread.start(); // begin thread execution
+//		javaThread.run(); // new thread wont be created
+		
+		PythonThread pythonThread = new PythonThread();
+//		pythonThread.start(); // The method start() is undefined for the type PythonThread
+		Thread thread = new Thread(pythonThread);
+		thread.start();		
+		
+		// main thread job
+		for(int i=1; i<=10; i++) {
+			System.out.println("Main "+i);
+		}
+	}
+}

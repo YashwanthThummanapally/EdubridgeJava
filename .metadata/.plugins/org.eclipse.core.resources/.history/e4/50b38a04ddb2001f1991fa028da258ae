@@ -1,0 +1,26 @@
+package practice;
+
+class Thread{
+	
+}
+
+class Runnable{
+	
+}
+class String{
+	static String s = new String();
+	
+	static String getS() {
+		return s;
+	}
+	void print() {
+		System.out.println("Hello java");
+	}
+}
+
+
+public class PreClassAsUserD {
+	public static void main(String[] args) {
+		System.out.println(String.getS().print());
+	}
+}

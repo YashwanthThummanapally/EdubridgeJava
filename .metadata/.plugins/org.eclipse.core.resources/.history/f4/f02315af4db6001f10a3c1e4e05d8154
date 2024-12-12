@@ -1,0 +1,20 @@
+/*
+ * @FunctionalInterface
+ * public interface Function<T,R>{
+ * 		R apply(T x);
+ */
+package java8;
+
+import java.util.function.Function;
+
+public class Test10 {
+	public static void main(String[] args) {
+		// square of a number
+		Function<Integer, Integer> f1 = num -> num * num;
+		System.out.println(f1.apply(5));
+		
+		// find length of the string
+		Function<String, Integer> f2 = s -> s.length();
+		System.out.println(f2.apply("Yogi adityanath"));
+	}
+}

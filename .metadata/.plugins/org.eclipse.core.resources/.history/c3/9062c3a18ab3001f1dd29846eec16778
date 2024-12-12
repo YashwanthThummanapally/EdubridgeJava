@@ -1,0 +1,11 @@
+
+class MyThread extends Thread{
+	
+}
+
+public class ThreadDemo2 {
+	public static void main(String[] args) {
+		MyThread myThread = new MyThread();
+		myThread.start();
+	}
+}

@@ -1,0 +1,34 @@
+package java8;
+
+@FunctionalInterface
+interface Printable {
+	void print();
+}
+
+//class EpsonPrinter implements Printable {
+//	@Override
+//	public void print() {
+//		System.out.println("Gives blank and white printout, color printout");
+//	}
+//}
+
+public class Test1 {
+	public static void main(String[] args) {
+//		Printable printer = new EpsonPrinter();
+//		printer.print();
+
+		// anonymous inner class
+//		Printable epson = new Printable() {
+//			@Override
+//			public void print() {
+//				System.out.println("Gives blank and white printout, color printout");
+//			}
+//		};
+//		epson.print();
+		
+		// lambda expression
+		Printable epson = () -> System.out.println("Gives blank and white printout, color printout");
+		epson.print();
+		
+	}
+}

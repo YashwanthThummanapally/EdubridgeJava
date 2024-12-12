@@ -1,0 +1,22 @@
+/*
+ * BiConsumer:
+ * @FunctionalInterface
+ * public interface BiConsumer<T,U>{
+ * 		void accept(T x, U y);
+ * }
+ */
+package java8;
+
+import java.util.function.BiConsumer;
+
+public class Test13 {
+	public static void main(String[] args) {
+		// cancatenate 2 strings
+		BiConsumer<String, String> b1 = (s1, s2) -> System.out.println(s1.concat(s2));
+		b1.accept("Core", "Java");
+		
+		// maipulate input
+		BiConsumer<String, Integer> b2 = (s, i) -> System.out.println(s.toUpperCase()+(i*2));
+		b2.accept("ms dhoni", 7);
+	}
+}

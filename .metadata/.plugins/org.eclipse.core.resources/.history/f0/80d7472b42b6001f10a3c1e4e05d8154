@@ -1,0 +1,12 @@
+/*
+ * @FunctionalInterface
+ * public interface Consumer<T>{
+ * 		void accept(T x);
+ * 	}
+ */
+
+package java8;
+
+public class Test9 {
+
+}

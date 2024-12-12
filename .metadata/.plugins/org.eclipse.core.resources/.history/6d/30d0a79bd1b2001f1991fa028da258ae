@@ -1,0 +1,12 @@
+
+class RedLight implements Runnable {
+
+	@Override
+	public void run() {
+		System.out.println("Red light");
+	}	
+}
+
+public class TrafficLights {
+
+}

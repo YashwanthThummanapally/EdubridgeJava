@@ -1,0 +1,11 @@
+package java8;
+
+import java.util.function.Predicate;
+
+public class Test8 {
+	public static void main(String[] args) {
+		// check name starts with R
+		Predicate<String> p = s -> s.startsWith("R");
+		System.out.println(p.test("Rakesh"));
+	}
+}

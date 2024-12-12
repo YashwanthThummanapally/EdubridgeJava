@@ -1,0 +1,14 @@
+package com.edubridge.maven_project1;
+
+import org.junit.jupiter.api.Assertions;
+
+public class ArithmeticCalciTest {
+
+	public void testSum() {
+		ArithmeticCalci calci = new ArithmeticCalci();
+		int actual = calci.sum(10, 20);
+		int expected = 30;
+		
+		Assertions.assertEquals(expected, actual);
+	}
+}

@@ -1,0 +1,22 @@
+package java8;
+
+@FunctionalInterface
+interface Worker {
+	void work();
+}
+
+class GoldSmith {
+	void prepareGold() {
+		System.out.println("Prepares neclace, rings, bracelate, watch, wristband");
+	}
+}
+
+class Carpenter {
+	void carpentry() {
+		System.out.println("Does carpentry work to prepare furnitures");
+	}
+}
+
+public class Test6 {
+
+}

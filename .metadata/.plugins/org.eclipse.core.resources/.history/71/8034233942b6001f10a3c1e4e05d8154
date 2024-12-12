@@ -1,0 +1,18 @@
+/*
+ * @FunctionalInterface
+ * public interface Consumer<T>{
+ * 		void accept(T x);
+ * 	}
+ */
+
+package java8;
+
+import java.util.function.Consumer;
+
+public class Test9 {
+	public static void main(String[] args) {
+		Consumer<Integer> c1 = age -> System.out.println(age);
+		c1.accept(23);
+		
+	}
+}

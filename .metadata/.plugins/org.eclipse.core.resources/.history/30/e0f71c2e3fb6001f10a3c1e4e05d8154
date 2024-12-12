@@ -1,0 +1,20 @@
+/*
+ * @FunctionalInterface
+ * public interface Predicate<T> {
+ * 		boolean test(T x);
+ * 	}
+ */
+
+package java8;
+
+import java.util.function.Predicate;
+
+public class Test8 {
+	public static void main(String[] args) {
+		// check name starts with R
+		Predicate<String> p = s -> s.startsWith("R");
+		System.out.println(p.test("Rakesh"));
+		
+		// check number is even or not
+	}
+}

@@ -1,0 +1,19 @@
+package java8;
+
+@FunctionalInterface
+interface Printable {
+	void print();
+}
+
+class EpsonPrinter implements Printable {
+	@Override
+	public void print() {
+		
+	}
+}
+
+public class Test1 {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,27 @@
+
+class RedLight implements Runnable {
+
+	@Override
+	public void run() {
+		System.out.println("Red light");
+	}	
+}
+
+class YellowLight extends Thread {
+	@Override
+	public void run() {
+		System.out.println("Yellow light");
+	}
+}
+
+class GreenLight implements Runnable {
+
+	@Override
+	public void run() {
+		System.out.println("Green light");
+	}
+}
+
+public class TrafficLights {
+
+}

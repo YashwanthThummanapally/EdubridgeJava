@@ -1,0 +1,9 @@
+package collections;
+
+import java.util.Stack;
+
+public class StackDemo {
+	public static void main(String[] args) {
+		new Stack<E>()
+	}
+}
